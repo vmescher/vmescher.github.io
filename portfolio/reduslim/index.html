@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Reduslim</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container item">
+			<header class="header">
+				<div class="header__bg">
+					<picture>
+						<source srcset="img/header_bg.png 1x" type="image/png" media="(min-width:991.98px)">
+						<source srcset="img/header_bg_mobile.png 1x" type="image/png" media="(max-width:991.98px)">
+						<img src="img/header_bg.png" alt="Reduslim_package">
+					</picture>
+				</div>
+				<div class="header__content">
+					<h3 class="header__title">Reduslim</h3>
+					<span class="header__subtitle">ECO</span>
+				</div>
+			</header>
+			<main class="page">
+				<section class="page__title title">
+					<h2 class="title__text">Сделай шаг к выздоровлению</h2>
+				</section>
+				<section class="page__form">
+					<form action="#" method="post" class="form">
+						<div class="form__row">
+							<div class="form__column">
+								<label for="form__name" class="form__label">Ваше <span
+										class="form__label_green">имя</span></label>
+								<input type="text" name="user-name" id="form__name" class="form__input" placeholder="Алексей">
+							</div>
+						</div>
+						<div class="form__row form__row_phone">
+							<div class="form__column form__column_phone">
+								<label for="form__phone" class="form__label">Ваш <span
+										class="form__label_green">телефон</span></label>
+								<input type="tel" name="user-phone" id="form__phone" class="form__input"
+									placeholder="+7 (123) 456 78-90">
+							</div>
+							<div class="form__column">
+								<select name="user-country" id="form__country" class="form__select">
+									<option value="RU">RU</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__row">
+							<button type="submit" class="form__button"><span>Заказать</span></button>
+						</div>
+				</section>
+				</form>
+			</main>
+			<footer class="footer">
+				<div class="footer__content">
+					<p class="footer__text">Trusted</p>
+					<p class="footer__text">Secure</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
