@@ -1397,7 +1397,9 @@ body._lock {
   }
 
   .menu {
-    display: none;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -1406,10 +1408,16 @@ body._lock {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 70px 0px 0px 0px;
     overflow-y: scroll;
+    -webkit-transition: all 0.3s ease 0.2s;
+    -o-transition: all 0.3s ease 0.2s;
+    transition: all 0.3s ease 0.2s;
+    z-index: 10;
   }
 
   .menu._active {
-    display: block;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
 
   .menu__body {
@@ -1441,7 +1449,7 @@ body._lock {
     width: 30px;
     height: 18px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 11;
     position: relative;
   }
 
